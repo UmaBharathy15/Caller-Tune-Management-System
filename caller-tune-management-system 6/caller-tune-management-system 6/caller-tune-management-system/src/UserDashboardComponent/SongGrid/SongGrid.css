@@ -1,0 +1,56 @@
+/* grid container spacing */
+.songgrid { margin-top: .5rem; }
+
+/* compact card: small, simple */
+.songcard {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+
+/* subtle highlight when playing */
+.songcard.playing {
+  outline: 2px solid #e11323;
+  outline-offset: 0;
+}
+
+/* small square cover */
+.cover {
+  width: 100%;
+  aspect-ratio: 1 / 1;          /* perfect square */
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f6f7f9;
+}
+.cover.placeholder i { font-size: 1.6rem; color: #9aa0a6; }
+
+/* one-line title under cover */
+.title {
+  width: 100%;
+  font-size: .9rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* audio element kept small */
+.audio {
+  width: 100%;
+  margin-top: 2px;
+}
+
+/* tighten Bootstrap audio on WebKit */
+audio::-webkit-media-controls-panel { padding: 0 6px; }
+audio::-webkit-media-controls-play-button { transform: scale(.9); }
+audio::-webkit-media-controls-timeline { margin: 0 4px; }
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display { font-size: 10px; }

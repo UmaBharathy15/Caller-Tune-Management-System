@@ -1,0 +1,34 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: AUTH-SERVICE2
+  datasource:
+    url: jdbc:postgresql://localhost:5432/authent_db
+    username: postgres
+    password: postgres   # change to your actual password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+    hostname: localhost   # 👈 force Eureka to register as localhost

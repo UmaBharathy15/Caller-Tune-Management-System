@@ -1,0 +1,100 @@
+/* =============================== */
+/* ===== Left Panel Headings ===== */
+/* =============================== */
+.left-headline {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 8px 0;
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.left-sub {
+  margin: 0;
+  opacity: 0.9;
+  color: #eaeaea;
+}
+
+/* =============================== */
+/* ===== Admin Login Title ======= */
+/* =============================== */
+.brand {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.admin-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.3px;
+}
+
+/* =============================== */
+/* ===== Form Controls =========== */
+/* =============================== */
+.form-block {
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+/* Pill-style inputs */
+.pill-input {
+  width: 100%;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  background: #fff;
+  transition: box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.pill-input::placeholder {
+  color: #9aa0a6;
+}
+
+.pill-input:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.pill-input:focus {
+  border-color: #0f766e;
+  box-shadow: 0 0 0 0.2rem rgba(13, 148, 136, 0.2);
+  outline: none;
+}
+
+/* =============================== */
+/* ===== Button ================== */
+/* =============================== */
+.btn-dark-lg {
+  width: 100%;
+  border: 0;
+  border-radius: 9999px;
+  padding: 0.95rem 1.2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(180deg, #111827, #0b1220);
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 160ms ease, filter 120ms ease;
+}
+
+.btn-dark-lg:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+  filter: brightness(1.02);
+}
+
+.btn-dark-lg:active {
+  transform: translateY(0);
+  box-shadow: none;
+}

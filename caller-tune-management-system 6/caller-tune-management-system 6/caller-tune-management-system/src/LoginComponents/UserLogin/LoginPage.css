@@ -1,0 +1,88 @@
+/* --- Brand-only top navbar for Login page --- */
+:root { --nav-height: 64px; }
+
+.navbar-custom {
+  background: #151515;
+  height: var(--nav-height);
+}
+
+/* spacer to push content below the fixed navbar */
+.nav-spacer {
+  height: var(--nav-height);
+}
+
+/* Brand styles (same as dashboard) */
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #e11323;
+  display: grid;
+  place-items: center;
+}
+
+.brand-dot i {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.brand-text {
+  color: #e11323;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+
+/* ===== existing login styles (you already had these) ===== */
+
+.left-headline { letter-spacing: -0.5px; }
+
+.welcome-text {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.brand-logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #000;
+  white-space: nowrap;
+}
+
+/* Pill inputs reused on login */
+.pill-input {
+  border-radius: 9999px;
+  border: 1px solid rgba(0,0,0,0.15);
+  padding: 0.9rem 1.1rem;
+  transition: box-shadow 160ms ease, border-color 160ms ease, transform 120ms ease;
+}
+.pill-input::placeholder { color: #9aa0a6; }
+.pill-input:hover { border-color: rgba(0,0,0,0.35); }
+.pill-input:focus {
+  border-color: #0f766e;
+  box-shadow: 0 0 0 0.2rem rgba(13,148,136,0.2);
+  outline: none;
+}
+
+.link-blue { color: #0d6efd; text-decoration: underline; }
+.link-blue:hover { color: #0a58ca; }
+
+.is-invalid { border-color: #dc3545 !important; }
+/* Login card look */
+.login-card {
+  max-width: 420px;   /* narrower, user-friendly */
+  width: 100%;
+  background: #fff;
+}
+
+/* keep consistent pill-input + brand styles you already had */

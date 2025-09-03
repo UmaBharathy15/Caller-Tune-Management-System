@@ -1,0 +1,46 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: auth-service
+          uri: lb://AUTH-SERVICE2
+          predicates:
+            - Path=/auth-service2/**
+          filters:
+            - StripPrefix=1
+
+        - id: catalog-service
+          uri: lb://CATALOG-SERVICE
+          predicates:
+            - Path=/catalog-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: media-service
+          uri: lb://MEDIA-SERVICE
+          predicates:
+            - Path=/media-service/**
+          filters:
+            - StripPrefix=1
+
+        - id: user-tunes-service
+          uri: lb://USER-TUNES-SERVICE
+          predicates:
+            - Path=/user-tunes-service/**
+          filters:
+            - StripPrefix=1
+
+springdoc:
+  swagger-ui:
+    urls[0]:
+      name: Auth Service
+      url: /auth-service2/v3/api-docs
+    urls[1]:
+      name: Catalog Service
+      url: /catalog-service/v3/api-docs
+    urls[2]:
+      name: Media Service
+      url: /media-service/v3/api-docs
+    urls[3]:
+      name: User Tunes Service
+      url: /user-tunes-service/v3/api-docs

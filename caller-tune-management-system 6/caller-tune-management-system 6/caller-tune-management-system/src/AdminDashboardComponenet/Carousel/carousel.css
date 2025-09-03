@@ -1,0 +1,16 @@
+/* src/Carousel/Carousel.css */
+
+.carousel-image {
+  max-height: 400px;   /* adjust this for banner height */
+  object-fit: cover;   /* crop nicely */
+}
+
+.carousel-inner {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.carousel {
+  margin-bottom: 2rem;
+}

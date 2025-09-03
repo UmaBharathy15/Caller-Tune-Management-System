@@ -1,0 +1,66 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Title + subtitle */
+.dashboard-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.dashboard-subtitle {
+  font-size: 16px;
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+/* Cards layout */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* Card */
+.card {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #ff5555;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Bottom image */
+.image-container {
+  margin-top: 40px;
+}
+
+.image-container img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}

@@ -1,0 +1,51 @@
+/* ------------------- BOOTSTRAP CAROUSEL RELATED ------------------- */
+
+/* Limit image height inside carousel (Bootstrap already makes it full-width) */
+.slider-image {
+  max-height: 360px;        /* adjust height limit as needed */
+  object-fit: cover;        /* fill space: cover | contain | fill */
+  user-select: none;        /* prevent dragging selection */
+}
+
+/* Bootstrap carousel already uses .carousel-inner, .carousel-item, etc.
+   No need to override unless you want custom spacing/borders. */
+
+/* ------------------- CUSTOM TWEAKS (OPTIONAL) ------------------- */
+
+/* Rounded corners + subtle shadow for the whole carousel box */
+.carousel-inner {
+  border-radius: 0.75rem;   /* rounded corners */
+  overflow: hidden;         /* hide overflow beyond radius */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Center carousel inside container if not full-width */
+.carousel {
+  margin: 0 auto;
+  max-width: 900px;         /* adjust for your layout */
+}
+
+/* Optional: style the prev/next controls more subtly */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 75%;     /* shrink icons a little */
+  filter: invert(1) grayscale(100); /* white arrows */
+  opacity: 0.8;
+}
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  opacity: 1;
+}
+
+/* Dots (indicators) customization */
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+}
+.carousel-indicators .active {
+  background-color: #e11323; /* your brand red */
+}
+
+/* ------------------- END CUSTOM STYLES ------------------- */

@@ -1,0 +1,13 @@
+:root {
+  --nav-height: 64px;
+  --brand-red: #e11323;
+  --nav-bg: #151515;
+  --lang-gray: #e5e5e5;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  padding-top: calc(var(--nav-height) + 16px); /* room for fixed navbar */
+  background: #fff;
+}

@@ -1,0 +1,119 @@
+:root {
+  --nav-height: 64px;
+  --brand-red: #e11323;
+  --nav-bg: #151515;
+  --lang-gray: #e5e5e5;
+}
+
+/* Navbar */
+/* Navbar - Always Black */
+.navbar-custom {
+  background: #000000 !important; /* solid black */
+  border-bottom: 1px solid #222;  /* subtle border */
+  height: var(--nav-height);
+}
+
+/* Brand */
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.brand-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--brand-red);
+  display: grid;
+  place-items: center;
+}
+.brand-dot i {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+}
+.brand-text {
+  color: var(--brand-red); /* always red */
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.2px;
+}
+
+/* Middle nav links */
+.nav-links a {
+  color: #ffffff; /* white by default */
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 12px;
+  transition: color 0.2s ease;
+}
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a:active {
+  color: var(--brand-red); /* red on hover/click/active */
+}
+
+/* Language button */
+.lang-btn {
+  background: var(--lang-gray) !important;
+  color: #151515 !important;
+  border: none !important;
+  font-weight: 600;
+}
+
+/* Avatar gradient ring */
+.avatar-toggle {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.ring {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: conic-gradient(#e11323, #a000ff);
+  display: grid;
+  place-items: center;
+  padding: 2px;
+}
+.ring .inner {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+  display: grid;
+  place-items: center;
+}
+.ring .inner i {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/* Dropdown sizing */
+.navbar-custom .dropdown-menu {
+  min-width: 12rem;
+}
+
+/* Theme toggle button */
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 9999px;
+  border: 1px solid var(--bs-border-color);
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  padding: 0;
+}
+.theme-toggle-btn:hover {
+  background: var(--bs-tertiary-bg);
+}
+
+/* Dark mode dropdown tweaks */
+[data-bs-theme="dark"] .dropdown-menu {
+  --bs-dropdown-bg: #222;
+  --bs-dropdown-link-color: #e9ecef;
+}

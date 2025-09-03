@@ -1,0 +1,32 @@
+.default-text-wrap {
+  background: #fff;
+}
+
+.section-title {
+  font-weight: 800;
+  letter-spacing: .04em;
+  color: #2b2b2b;
+}
+
+.linklist {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.linklist li { margin: .35rem 0; }
+
+.linklist a {
+  text-decoration: none;
+  color: #333;
+}
+
+.linklist a:hover {
+  color: #e11323; /* brand red */
+  text-decoration: underline;
+}
+
+/* subtle divider like the screenshot */
+.default-text-wrap {
+  border-top: 1px solid rgba(0,0,0,.08);
+}

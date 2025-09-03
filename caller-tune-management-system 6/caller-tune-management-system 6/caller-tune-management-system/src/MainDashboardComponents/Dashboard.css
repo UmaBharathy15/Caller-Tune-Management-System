@@ -1,0 +1,11 @@
+/* Remove space between nav and carousel */
+.no-gap {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Ensure carousel stretches full width horizontally */
+.carousel {
+  width: 100%;
+  border-radius: 0; /* remove rounded corners if you want edge-to-edge */
+}

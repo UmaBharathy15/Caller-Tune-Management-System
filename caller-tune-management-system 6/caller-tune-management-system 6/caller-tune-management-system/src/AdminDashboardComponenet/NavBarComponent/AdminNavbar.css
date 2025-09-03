@@ -1,0 +1,72 @@
+/* Navbar */
+.navbar {
+  background-color: #000;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* left | center | right */
+  align-items: center;
+  padding: 0 24px;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Brand */
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.brand-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e11323;
+  display: grid;
+  place-items: center;
+}
+.brand-dot i {
+  color: #fff;
+  font-size: 16px;
+}
+.brand-text {
+  color: #e11323;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* Avatar Gradient Ring */
+.avatar-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.avatar-ring {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: conic-gradient(#00c6ff, #ff61d2); /* gradient border */
+  display: grid;
+  place-items: center;
+  padding: 2px;
+}
+
+.avatar-inner {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #000; /* black background inside */
+  display: grid;
+  place-items: center;
+}
+
+.avatar-inner i {
+  font-size: 20px;
+  color: white;
+}
